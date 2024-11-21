@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Dashboard</title>
+    <!--CSS File link-->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>AI Dashboard</h1>
+    <label for="input-type">Select Input Type:</label>
+    <select id="input-type">
+        <option value="" disabled selected>Choose an option</option>
+        <option value="csv">Upload CSV</option>
+        <option value="google_drive_link">Google Drive Link</option>
+    </select>
+    <div id="upload-section">
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv">
+        </form>
+    </div>
+    <div id="link-section">
+        <textarea id="sheet-url" placeholder="Enter Google Drive link"></textarea>
+        <button id="file2">Upload</button>
+    </div>
+    <button id="data">Fetch Data</button>
+    <div id="column-select-section">
+        <label for="column-select">Select a column:</label>
+        <select id="column-select"></select>
+    </div>
+    <div id="tableContainer"></div>
+    <div id="prompt-input">
+        <textarea id="prompt" placeholder="Enter your query here (use {entity} as a placeholder)"></textarea>
+        <button id="submit-query">Submit Query</button>
+    </div>
+    <div id="tableContainer"></div>
+    <div id="results">
+        <h3>Results:</h3>
+        <div id="results-table"></div>
+    </div>
+    <button id="download-button">Download Results</button>
+    <script src="static/action.js"></script>
+</body>
+</html>

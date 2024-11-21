@@ -1,0 +1,116 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+    margin: 0;
+    font-size: 2rem;
+}
+
+#upload-section,
+#link-section,
+#column-select-section,
+#prompt-input,
+#results {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+select, textarea, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(86, 81, 81);
+}
+
+#download-button {
+    display: block;
+    margin: 20px auto;
+    background-color: black;
+}
+
+#download-button:hover {
+    background-color:  rgb(86, 81, 81);
+}
+
+#data{
+    align-items: center;
+    margin: 20px auto;
+}
+
+#tableContainer,
+#results-table {
+    overflow-x: auto;
+    margin: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    #upload-section,
+    #link-section,
+    #column-select-section,
+    #prompt-input,
+    #results {
+        width: 100%;
+        padding: 15px;
+    }
+}
